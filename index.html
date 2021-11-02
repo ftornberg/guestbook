@@ -10,35 +10,35 @@
 
 <body>
     <h1>Gästbok</h1>
-    <form method="post" name="Gästbok" onsubmit="return submitForm()">
+    <form method="post" name="guestBook" onsubmit="return submitForm()">
         <div>
             <label for="namn">Namn:
                 <br>
-                <input type="text" name="namn" id="namn" placeholder="Ange ditt namn" required>
+                <input type="text" name="namn" id="namn" placeholder="Ange ditt namn" required> *
             </label>
         </div>
         <br>
         <div>
-            <label for="e-post">E-post:
+            <label for="epost">E-post:
                 <br>
-                <input type="email" name="e-post" id="e-post" placeholder="Ange din e-postadress" required>
+                <input type="email" name="epost" id="epost" placeholder="Ange din e-postadress" required> *
             </label>
         </div>
         <br>
         <div>
-            <label for="telefonnummer">Telefonnummer:
+            <label for="telefon">Telefonnummer:
                 <br>
-                <input type="tel" name="telefonnummer" id="telefonnummer" placeholder="Telefonnummer">
+                <input type="tel" name="telefon" id="telefon" placeholder="Telefonnummer">
         </div>
         <br>
         <div>
-            <label for="Meddelande">Meddelande:
+            <label for="meddelande">Meddelande:
                 <br>
-                <textarea name="Meddelande" id="Meddelande" placeholder="Ditt meddelande här"></textarea>
+                <textarea name="meddelande" id="meddelande" placeholder="Ditt meddelande här"></textarea>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" required> Jag godkänner att mina uppgifter lagras.
+            <input type="checkbox" id="gdpr" name="gdpr" value="gdpr" required> Jag godkänner att mina uppgifter lagras. *
         </div>
         <br>
         <input type="submit" value="Skicka">
@@ -47,6 +47,7 @@
     <p id="message">
 
     </p>
+    <script src="script.js"></script>
 </body>
 
 </html>
